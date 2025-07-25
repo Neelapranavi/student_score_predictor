@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
 import numpy as np 
 
-model =joblib.load("model/score_model.pkl")
+model = joblib.load("model/score_model.pkl")
 
 class Stu_Data(BaseModel):
     study_time: float
